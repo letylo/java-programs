@@ -1,0 +1,75 @@
+/**
+ * 
+ */
+
+/**
+ * @author Atenea
+ *
+ */
+public class Coche {
+
+	static int numRuedas = 4;
+	String color;
+	int posX;
+	int posY;
+	int velocidad;
+
+void mover(int x, int y)
+{
+	if (x != posX)
+		posX = x;
+	if (y != posY)
+		posY = y;
+}
+
+int acelerar()
+{
+	velocidad += 10;
+	return velocidad;
+}
+
+int frenar()
+{
+	if(velocidad > 10)
+		velocidad -= 10;
+	else
+		velocidad = 0;
+	
+	return velocidad;
+}
+
+//Este es el constructor de la clase Coche
+public Coche(String color, int posx, int posy) {
+
+	this.color = color;
+	this.posX = posx;
+	this.posY = posy;
+	this.velocidad = 0;	
+}
+
+
+public static void main(String[] args)
+{
+	//Así creamos un objeto de la clase Coche
+	Coche a = new Coche("rojo", 0, 0);
+	
+	//Escribimos por pantalla
+	System.out.println("La velocidad del coche " + a.color + "es de " + a.velocidad);
+	
+	//Llamamos al metodo acelerar
+	a.acelerar();
+	System.out.println("Tras acelerar la velocidad del coche es " + a.velocidad);
+	
+	a.frenar();
+	System.out.println("Tras frenar la velocidad del coche es " + a.velocidad);
+	
+	System.out.println("El número de ruedas del coche es " + a.numRuedas);
+}
+}
+
+
+	
+
+
+	
+

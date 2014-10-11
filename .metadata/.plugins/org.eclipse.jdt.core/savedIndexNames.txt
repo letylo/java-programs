@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+C:\Users\Atenea\Desktop\DAM\Programación Multimedia\java-programs\.metadata\.plugins\org.eclipse.jdt.core
+4242647769.index
+1709767523.index
+4205513231.index
+2146895890.index
+3688086182.index

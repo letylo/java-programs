@@ -1,0 +1,87 @@
+/**
+ * 
+ */
+package Ejercicio0;
+
+/**
+ * @author Atenea
+ *
+ */
+public class Transporte {
+
+	/**
+	 * @param args
+	 */
+	
+	//Atributos
+	private int numPasajeros;
+	private float velocidad;
+	private int precioPersonaTrayecto;
+	
+	
+	/**Constructor con parametros
+	 * @param numPasajeros
+	 * @param velocidad
+	 * @param precioPersonaTrayecto
+	 */
+	public Transporte(int numPasajeros, float velocidad, int precioPersonaTrayecto) {
+		super();
+		this.numPasajeros = numPasajeros;
+		this.velocidad = velocidad;
+		this.precioPersonaTrayecto = precioPersonaTrayecto;
+	}
+	
+	/**Constructor sin parametros
+	 * 
+	 */
+	public Transporte() {
+		super();
+		this.numPasajeros = 50;
+		this.velocidad = 200;
+		this.precioPersonaTrayecto = 40;
+	}
+	
+	//Métodos públicos
+	public int calcularPrecioTrayecto(){		
+		return this.getPrecioPersonaTrayecto()*this.getNumPasajeros();
+	}
+	
+	
+	public int getNumPasajeros() {
+		return numPasajeros;
+	}
+
+
+	public void setNumPasajeros(int numPasajeros) {
+		this.numPasajeros = numPasajeros;
+	}
+
+
+	public float getVelocidad() {
+		return velocidad;
+	}
+
+
+	public void setVelocidad(float velocidad) {
+		this.velocidad = velocidad;
+	}
+
+
+	public int getPrecioPersonaTrayecto() {
+		return precioPersonaTrayecto;
+	}
+
+
+	public void setPrecioPersonaTrayecto(int precioPersonaTrayecto) {
+		this.precioPersonaTrayecto = precioPersonaTrayecto;
+	}
+    
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Transporte tren = new Transporte(50, 200, 40);	
+		
+		System.out.println("El numero de psajeros es " + tren.numPasajeros);
+	}
+
+}

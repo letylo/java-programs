@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package Ejercicio0;
+
+/**
+ * @author Atenea
+ *
+ */
+public class Transporte {
+
+	/**
+	 * @param args
+	 */
+	
+	//Atributos
+	private int numPasajeros;
+	private int velocidad;
+	private int precio; //precio/trayecto/persona
+	private int trayecto;
+	
+	//Métodos privados
+	
+	//Métodos públicos
+	public int calcularPrecioTrayecto(){
+		
+		precio = precio * numPasajeros;
+		return precio;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

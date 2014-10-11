@@ -1,0 +1,41 @@
+
+public class Persona {
+	private String Paco;
+	/**
+	 * @param args
+	 */
+	private String nombre = Paco;
+	private String DNI;
+	private int edad = 19;
+	private char sexo = 'H';
+	private int peso = 70;//En kg
+	private int altura = 170;//En cm
+	
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+	public Persona()
+	{
+		this.nombre = "";
+		this.DNI = "";
+		this.edad = 0;
+		this.sexo = ' ';
+		this.peso = 0;
+		this.altura = 0;
+		
+	}
+	
+	public Persona(String nombre, int edad, char sexo)
+	{
+		this.nombre = "Paco";
+		this.DNI = "";
+		this.edad = 19;
+		this.sexo = 'H';
+		this.peso = 0;
+		this.altura = 0;
+	}
+}
