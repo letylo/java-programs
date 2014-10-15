@@ -62,6 +62,15 @@ public class Empleado {
 		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		Empleado j = new Empleado("Jaime Ros", 1500, "31-05-1997");
+
+		int pago1 = j.calcularSalario();
+		
+		System.out.println("Total a pagar: " + pago1);
+		
+		
+		
 
 	}
 

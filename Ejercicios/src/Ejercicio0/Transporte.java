@@ -57,7 +57,7 @@ public class Transporte {
 		this.numPasajeros = numPasajeros;
 	}
 
-
+	
 	private float getVelocidad() {
 		return velocidad;
 	}

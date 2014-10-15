@@ -1,0 +1,20 @@
+
+public class Point {
+
+	/**
+	 * @param args
+	 */
+	
+	static int nPoints;
+	int x, y;
+	Point root; //Objeto de la clase Point
+	
+	public Point(){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+}
+
+
